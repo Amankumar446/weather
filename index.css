@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:hover {
+  color: rgba(241, 46, 46, 0.952);
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+  background-image: url(weather.webp);
+  color: darkgreen;
+  padding: 50px;
+  padding-bottom: 50px;
+  border: 5px solid black;
+  border-bottom-width: 5px;
+  border-bottom-color: darkblue;
+  background-size: cover;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  padding:10px;
+}
+
+body {
+  background: linear-gradient(
+    270deg,
+    rgba(27, 121, 245, 0.952),
+    rgba(0, 0, 0, 0.966)
+  );
+}
+
+td {
+  color: rgb(247, 191, 7);
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  
+}
+
+tr:hover {
+  background-color: #fff1ae;
+}
+
+td:nth-child(1) {
+  font-weight: bold;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #63eba0, #5b548a);
+  color: #fff;
+  margin: 50px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+form{
+  border:3px solid black;
+  text-align: center;
+  margin:10px 400px;
+  padding: 50px;
+  background-size: cover;
+  color:rgba(0, 0, 0, 0.966);
+  background: linear-gradient(135deg, #49eba2, #010101);
+  border-radius: 50px;
+}
+
+form:hover{
+  text-decoration: underline;
+  color:darkred;
+}
+
+.center{
+  text-align: center;
+  background-color:rgb(153, 235, 157);
+  border-radius: 5px;
+  
+}
+
+.logos {
+  margin: 0 auto;
+  height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  nav,
+  nav .left,
+  nav .right {
+   display: grid;
+  }
+}
