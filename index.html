@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather Try</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <center>
+      <h1>Polar Weather Forecast</h1>
+    </center>
+
+    <nav>
+      <div class="left">
+        <a href="#">Home</a>
+        <a href="about.html">about us</a>
+        <a href="#">contact</a>
+      </div>
+      <div class="right">
+        <a href="sign_up.html">sign up</a>
+        <a href="login.html">login</a>
+      </div>
+    </nav>
+
+    <div class="card">
+      <center>
+        <p id="inputContainer">
+          <input
+            type="text"
+            style="text-align: center ;padding: 3px;"
+            id="cityInput"
+            placeholder="Enter City "
+          />
+          <button onclick="GetInfo()">Search</button><br />
+        </p>
+        <br />
+        <h2 id="cityName" style="color: rgb(88, 7, 7)"></h2>
+      </center>
+    </div>
+    <div style="overflow-x: auto">
+      <table>
+        <thead>
+          <tr style="color: rgb(11, 241, 115)">
+            <th>Date</th>
+            <th>Icons</th>
+            <th>Feels Like</th>
+            <th>Avg_Temp</th>
+            <th>Min_Temp</th>
+            <th>Max_Temp</th>
+            <th>Humidity</th>
+            <th>Pressure</th>
+            <th>Wind_Speed</th>
+            <th>Cloud_Description</th>
+            <th>Sea_level</th>
+          </tr>
+        </thead>
+        <tbody id="weather_table_body"></tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+
+</html>
